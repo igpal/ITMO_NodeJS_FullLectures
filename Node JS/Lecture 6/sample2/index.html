@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <script src="mustache.min.js"></script>
+</head>
+
+<body>
+    <script>
+        var data = {
+            album: {
+                title: 'Всем привет',
+                artist: 'Алла Борисовна'
+            }
+        };
+
+        var template = "{{album.title}}!!!. {{album.artist}} любит вас.";
+
+        var result = Mustache.render(template, data);
+
+        console.log(result);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="jquery.js"></script>
+</head>
+
+<body>
+    <form name="person" method="POST" url="/" enctype="application/x-www-form-urlencoded">
+        <input name="name" value="Иван">
+        <input name="surname" value="Иванович">
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+<script>
+    document.forms.person.addEventListener('submit', function(e) {
+        e.preventDefault();
+        //Способ 1
+        /*let formData = new FormData(document.forms.person);
+
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", '/', true);
+        xhr.send(formData);
+        */
+
+        //Способ 2
+        /*  let str = $(document.forms.person).serialize();
+
+          $.ajax({
+              type: 'POST',
+              url: '/',
+              data: str,
+              success: function() {
+                  console.log('Данные отправлены');
+              }
+          });
+          */
+
+        //Передача объекта 
+        let obj = {
+            name: $('input[name=name]').val(),
+            surname: $('input[name=surname]').val()
+        };
+
+        $.ajax({
+            type: 'POST',
+            url: '/',
+            data: JSON.stringify(obj),
+            success: function() {
+                console.log('Данные отправлены');
+            }
+        });
+
+    });
+</script>
+
+</html>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MMWEATHER>
+	<REPORT type="frc3">
+		<TOWN index="1" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="2" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="3" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="4" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="5" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="6" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="7" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="8" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="9" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="10" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="11" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+    <REPORT type="frc3">
+		<TOWN index="12" sname="%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" latitude="43" longitude="77">
+                    			<FORECAST day="05" month="02" year="2020" hour="21" tod="3" predict="0" weekday="4">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="766" min="763"/>
+				<TEMPERATURE max="2" min="0"/>
+				<WIND min="1" max="2" direction="6"/>
+				<RELWET max="73" min="66"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="03" tod="0" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="767" min="766"/>
+				<TEMPERATURE max="1" min="0"/>
+				<WIND min="2" max="3" direction="5"/>
+				<RELWET max="68" min="63"/>
+
+				<HEAT min="-4" max="-4"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="09" tod="1" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="768" min="767"/>
+				<TEMPERATURE max="4" min="1"/>
+				<WIND min="1" max="3" direction="5"/>
+				<RELWET max="65" min="60"/>
+
+				<HEAT min="-3" max="-3"/>
+			</FORECAST>
+                        			<FORECAST day="06" month="02" year="2020" hour="15" tod="2" predict="0" weekday="5">
+				<PHENOMENA cloudiness="3" precipitation="10" rpower="0" spower="0"/>
+				<PRESSURE max="771" min="768"/>
+				<TEMPERATURE max="6" min="5"/>
+				<WIND min="0" max="1" direction="0"/>
+				<RELWET max="62" min="57"/>
+
+				<HEAT min="2" max="2"/>
+			</FORECAST>
+        </TOWN>
+	</REPORT>
+</MMWEATHER>

@@ -1,0 +1,31 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        let socket = new WebSocket("ws:localhost:8080");
+        socket.onopen = function() {
+            console.log("Соединение установлено.");
+        };
+        socket.onclose = function(event) {
+            if (event.wasClean) {
+                console.log('Соединение закрыто чисто');
+            } else {
+                console.log('Обрыв соединения');
+            }
+            console.log('Код: ' + event.code);
+        };
+
+        socket.onmessage = function(event) {
+            console.log("Получены данные " + event.data);
+        };
+        socket.onerror = function(error) {
+            console.log("Ошибка");
+        };
+    </script>
+</body>
+
+</html>

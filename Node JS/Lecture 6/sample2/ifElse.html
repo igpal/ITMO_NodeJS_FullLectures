@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script src="mustache.min.js"></script>
+</head>
+
+<body>
+    <script>
+        var data = {
+            "person": true
+        };
+
+        var template = "{{#person}}" +
+            "Персональная информация" +
+            "{{/person}}" +
+            "{{^person}}" +
+            "Ничего нету =(" +
+            "{{/person}}";
+
+        var result = Mustache.render(template, data);
+
+        document.body.innerHTML = result;
+    </script>
+</body>
+
+</html>

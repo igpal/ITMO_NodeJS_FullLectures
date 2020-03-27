@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form 
+            id="test_form"
+            action="/test/" 
+            enctype="application/x-www-form-urlencoded" 
+            method="GET"
+        >
+            <input type="text" name="text1" value="sample">
+            <input type="text" name="text2" value="Привет">
+            
+            <button type="submit">
+                Отправить
+            </button>
+        </form>
+        
+        <script>
+            var test_form = document.getElementById('test_form');  
+                
+            test_form.addEventListener('submit', function(e){
+                e.preventDefault();
+                
+                var xhr = new XMLHttpRequest();
+                
+                xhr.open('GET', '/test/?test=1', true);
+                
+                xhr.send();
+                
+                xhr.onreadystatechange = function(){                
+                    if(xhr.readyState != 4) return;
+                    
+                                    
+                    if(xhr.status != 200){
+                        console.log(xhr.status + ' ' + xhr.statusText);
+                    } else {
+                        console.log(xhr.responseText);
+                    }
+                }
+                
+            });            
+        </script>
+    </body>
+</html>
