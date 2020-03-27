@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        HTML 2
+    </title>
+</head>
+
+<body>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>
+                Название группы эементов
+            </legend>
+            <label>Поле однострочного ввода от 5 до 10</label>
+            <input type="text" minlength="5" maxlength="10">
+
+            <br>
+            <label>Поле однострочного ввода <input type="text"></label>
+            <br>
+
+            <label for="text">Поле однострочного ввода</label>
+            <input type="text" id="text" value="По умолчанию">
+            <p>
+                <label for="post">Почта:</label>
+                <input type="email" id="post" disabled>
+            </p>
+
+            <p>
+                <label for="pass"> Password</label>
+                <input type="password" id="pass" placeholder="Введте пароль" required>
+            </p>
+
+            <p>
+                <label for="url"> URL</label>
+                <input type="password" id="url" placeholder="Введте URL">
+            </p>
+
+            <p>
+                <label for="search"> Поиск</label>
+                <input type="search" id="search" placeholder="Поиск">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Button</legend>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+            <p><input type="reset" value="Сбросить"></p>
+
+            <p><input type="button" value="Сбросить"></p>
+
+            <p>
+                <input type="image" src="">
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                Кнопки(button)
+            </legend>
+            <button type="submit"> Отправить Форму</button>
+            <button type="reset"> Сбросить Форму</button>
+            <button>Просто</button>
+        </fieldset>
+        <fieldset>
+            <legend>Загрузка файлов</legend>
+            <p>
+                <label for="file"></label>
+                <input type="file" id="file" placeholder="Выберите файл" multiple accept="image/*">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Числа</legend>
+            <p>
+                <label for="number"> Введите число</label>
+                <input type="number" id="number" placeholder="Введте число" min="5" max="15" step="3">
+            </p>
+
+            <p>
+                <label for="range"> Ползунок</label>
+                <input type="range" id="range" min="10" max="500" step="4">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Чек-боксы</legend>
+            <p>
+                <label for="ch"> 1</label>
+                <input type="checkbox" id="ch">
+                <label> <input type="checkbox" checked>2</label>
+                <label> <input name="answer2" type="checkbox" checked>3</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Radio</legend>
+            <label> <input name="answer" type="radio" checked>var_1</label>
+            <label> <input name="answer" type="radio" checked>var_2</label>
+            <label> <input name="answer" type="radio" checked>var_3</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Data/time</legend>
+            <label>Выбор времени <input type="time"></label>
+            <br>
+            <label>Выбор дату <input type="date"></label>
+            <br>
+            <label>Выбор даты и время <input type="datetime-local"></label>
+            <br>
+            <label>Выбор месяца и года<input type="month"></label>
+            <br>
+            <label>Выбор недели и года<input type="week"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Выбор цвета и скрытый</legend>
+            <p>
+                <label>Выбор цвета <input type="color"></label>
+            </p>
+            <p>
+                <label>Скрытый <input type="hidden" name="somedata" value="info"></label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Многострочный ввод</legend>
+            <p>
+                <textarea name="t_a" id="" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Списки</legend>
+            <p>
+                <select name="stl" id="" size="2">
+                   <option value="19000">Спб</option>
+                   <option value="11111">Москва</option>
+                   <option value="12222">Казань</option>
+                   <option value="22334">Уфа</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Группы</legend>
+            <p>
+                    <select name="stl" id="" size="2">
+                        <optgroup label="Города">
+                            <option value="19000">Спб</option>
+                            <option value="11111">Москва</option>
+                        </optgroup>
+                            <option value="12222">Казань</option>
+                            <option value="22334">Уфа</option>
+                         </select>   
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

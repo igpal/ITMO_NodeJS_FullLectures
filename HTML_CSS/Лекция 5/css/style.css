@@ -1,0 +1,83 @@
+    .flex {
+        display: flex;
+        height: 100px;
+        /* Выравнивание по горизонтале */
+        /* по левому */
+        /* по умолчанию */
+        justify-content: flex-start;
+        /* по правому*/
+        justify-content: flex-end;
+        /* по центру*/
+        justify-content: center;
+        /* одинаковые области*/
+        justify-content: space-around;
+        /*без левого и правого отсоупа*/
+        justify-content: space-between;
+    }
+    
+    p {
+        background-color: aqua;
+    }
+    
+    div {
+        background-color: brown;
+        border: 1px solid;
+    }
+    /**/
+    
+    .flex-1 {
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        /*default*/
+        align-items: stretch;
+        /*по верхнему краю*/
+        align-items: flex-start;
+        /*по нижнему краю*/
+        align-items: flex-end;
+        /* элементы выравниваются по базовой линии*/
+        align-items: baseline;
+    }
+    
+    .flex-2 {
+        display: flex;
+        /* по умолчанию*/
+        flex-direction: row;
+        /* обратно*/
+        flex-direction: row-reverse;
+        /* обратно*/
+        flex-direction: column;
+        /* обратно*/
+        flex-direction: column-reverse;
+    }
+    
+    .flex-3 {
+        display: flex;
+        /*без переноса*/
+        flex-wrap: nowrap;
+        /*элеменгты, которые не помещаются переносятся*/
+        width: 250px;
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .flex-4 {
+        display: flex;
+        width: 250px;
+        flex-wrap: wrap;
+        height: 500px;
+        /*по умолчанию растягиваются*/
+        align-content: stretch;
+        /* выравнивание по верхнему краю*/
+        align-content: flex-start;
+        /* выравнивание по нижнему краю*/
+        align-content: flex-end;
+        /* cenyter*/
+        align-content: center;
+        /* равные отступы*/
+        align-content: space-around;
+        /* ,без верхнего и нижнего*/
+        align-content: space-between;
+        /* равномерные выравнивания*/
+        align-content: space-evenly;
+    }

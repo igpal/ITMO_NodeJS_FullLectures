@@ -1,0 +1,66 @@
+.div {
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin: 15px;
+    /* Верз-низ лево-право */
+    margin: 15px 30px;
+    /* лево-право Верз  */
+    margin: 15px 30px 10px;
+    /* Верз-низ лево-право */
+    margin: 15px 30px 10px;
+    border: 2px solid brown;
+    border-radius: 20px;
+    border-top: 1px solid green;
+    border-right: 2px solid black;
+    border-bottom: 4px solid yellow;
+    border-left: 4px solid white;
+    border-left-color: orange;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.P {
+    margin-top: -50px;
+}
+
+.P {
+    padding: 30px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding: 15px;
+    /* Верз-низ лево-право */
+    padding: 15px 30px;
+    /* лево-право Верз  */
+    padding: 15px 30px 10px;
+    /* Верз-низ лево-право */
+    padding: 15px 30px 10px;
+}
+
+.box {
+    height: 100;
+    width: 100;
+    border: 1px solid black;
+    /* box-sizing: content-box;*/
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.span {
+    height: 50px;
+    width: 50px;
+    border: 2px black solid;
+    display: inline-block;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul {
+    padding-inline-start: 0px;
+}

@@ -1,0 +1,96 @@
+/*.message {
+    padding: 12px 19px;
+    border-radius: 5px;
+    border: 1px solid #657447;
+    color: #992131;
+    background-color: burlywood
+}
+
+.message_success {
+    color: aliceblue;
+    background-color: chartreuse;
+}
+
+.message_warring {
+    color: cornflowerblue;
+    background-color: crimson;
+}
+*/
+
+.vertical-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.vertical-menu__item {
+    flex: 0 0 10em;
+    padding: 0.5em 1em;
+    color: navy;
+    background-color: beige;
+    border: 1px solid black;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    box-sizing: border-box;
+    transition: background-color 0.2 linear;
+}
+
+.vertical-menu__item:hover {
+    background-color: cadetblue;
+}
+
+.vertical-menu__item:hover>.vertical-menu__drawer {
+    transition: opacity 0.5s linear, visibility 0s linear;
+    opacity: 1;
+    visibility: visible;
+}
+
+.vertical-menu__drawer {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: beige;
+    width: calc(10em - 2px);
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: calc(1em + 1em * 1.5 + 1px);
+    z-index: 1;
+}
+
+.submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.submenu__item+.submenu__item>.submenu__link {
+    border-top: 0;
+}
+
+.submenu__link {
+    display: block;
+    padding: 0.5em 1em;
+    color: maroon;
+    background-color: beige;
+    text-decoration: none;
+    border: 1px solid black;
+    transition: background-color, color 0.2s linear;
+}
+
+.submenu__link:hover {
+    background-color: chocolate;
+    color: darkgreen;
+}
+
+.vertical-menu__item:hover>.vertical-menu__drawer.vertical-menu__transition_scaleY {
+    transition: transform 0.5s linear;
+    transform: scaleY(1);
+}
+
+.vertical-menu__drawer.vertical-menu__transition_scaleY {
+    transform: scaleY(0);
+    transform-origin: top;
+}

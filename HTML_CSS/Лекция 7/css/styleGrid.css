@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header header header" "slider slider slider" "vertical-nav main news" "footer footer footer";
+    grid-template-columns: 1fr minmax(500px, 960px) 1fr;
+    grid-template-rows: 60px auto 1fr 60px;
+    height: 100vh;
+    grid-gap: 10px;
+}
+
+header {
+    grid-area: header;
+}
+
+#slider {
+    grid-area: slider;
+}
+
+#vertical-menu {
+    grid-area: vertical-nav;
+}
+
+main {
+    grid-area: main;
+}
+
+#news {
+    grid-area: news;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header,
+#slider,
+#vertical-menu,
+main,
+#news,
+footer {
+    background-color: slategrey;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: grid;
+    background-color: black;
+    color: red;
+    grid-template-columns: 1fr 7fr 1fr;
+    position: fixed;
+    height: 60px;
+}
+
+header ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.3em;
+}
+
+header li {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+header li:hover {
+    background-color: grey;
+}
+
+header a {
+    color: snow;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+    margin: 0;
+    align-items: center;
+}
+
+#logo {
+    background-image: url(../img/logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#slider li {
+    display: none;
+}
+
+#slider li.active {
+    display: block;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.cards h1 {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+.articles h1 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}

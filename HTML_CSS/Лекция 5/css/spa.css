@@ -1,0 +1,33 @@
+.container {
+    height: 500px;
+    border: 1px solid black;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+#about:target~.about,
+#products:target~.products,
+#order:target~.order {
+    display: block;
+}
+
+.about {
+    background: saddlebrown;
+}
+
+.products {
+    background: purple;
+}
+
+.order {
+    background: seagreen;
+}

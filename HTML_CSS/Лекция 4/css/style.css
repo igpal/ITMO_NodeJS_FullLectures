@@ -1,0 +1,81 @@
+div {
+    border: 1px solid black;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.display {
+    display: none;
+}
+
+.static {
+    position: static;
+    /* по умолчанию */
+}
+
+.relative {
+    position: relative;
+    top: 5px;
+    left: 50px;
+}
+
+.absolut {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* right: 10px;
+    bottom: 10px;
+    */
+    background: palegoldenrod;
+    z-index: 0;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background: palevioletred;
+    z-index: 1;
+}
+
+.margin-top {
+    margin-top: 19px;
+}
+
+.sticky {
+    position: sticky;
+    z-index: 3;
+    background: slateblue;
+    top: 20px;
+}
+
+.float {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    background: seagreen;
+}
+
+.container::after {
+    display: block;
+    content: " ";
+    visibility: hidden;
+    clear: both;
+    height: 0px;
+}

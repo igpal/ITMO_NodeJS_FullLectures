@@ -1,0 +1,131 @@
+    button {
+        background-color: coral;
+        border: 0;
+        color: cornsilk;
+        font-size: 16px;
+        padding: 5px 16px;
+        transition-property: all;
+        transition-property: background-color, border-radius;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(1, -0.3, 0, 1.4);
+        /*transition: all 0.5s linear 0.1s;*/
+    }
+    
+    button:hover {
+        background-color: darkblue;
+        border-radius: 20px;
+    }
+    
+    .rotate {
+        height: 200px;
+        width: 200px;
+        background-color: darkgreen;
+        margin: 50px;
+        transform: rotate(30deg);
+        transform-origin: 0 0;
+    }
+    
+    .translate {
+        height: 200px;
+        width: 200px;
+        background-color: palevioletred;
+        margin: 50px;
+        transform: translate(40px, 20px);
+    }
+    
+    .scale {
+        height: 200px;
+        width: 200px;
+        background-color: purple;
+        margin: 50px;
+        transform: scale(0.5);
+    }
+    
+    .skew {
+        height: 200px;
+        width: 200px;
+        background-color: sandybrown;
+        margin: 50px;
+        transform: skew(15deg) scale(0.8);
+    }
+    
+    .translateAnimation {
+        height: 200px;
+        width: 200px;
+        background-color: yellowgreen;
+        margin: 50px;
+        transition: transform 1s linear;
+    }
+    
+    .translateAnimation:hover {
+        transform: translate(40px, 20px);
+    }
+    
+    .transform-3d {
+        height: 200px;
+        width: 200px;
+        background-color: teal;
+        transform: perspective(400px) rotateY(30deg) rotateX(15deg) rotateZ(45deg);
+    }
+    
+    .some-container {
+        perspective: 35px;
+        perspective-origin: 50% 50%;
+    }
+    
+    .some-container>div {
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        background-color: darkgray;
+        transform: rotateX(5deg);
+    }
+    
+    .box {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        animation: over-and-back 1s linear infinite;
+    }
+    
+    @keyframes over-and-back {
+        0% {
+            background-color: crimson;
+            transform: translate(0, 0);
+        }
+        5% {
+            background-color: crimson;
+            transform: translate(20px, 0) perspective(200px) rotateX(-10deg);
+        }
+        10% {
+            background-color: crimson;
+            transform: translate(40px, 0) perspective(200px) rotateX(-15deg);
+        }
+        15% {
+            background-color: crimson;
+            transform: translate(60px, 0) perspective(200px) rotateX(-20deg);
+        }
+        /* 50% {
+            transform: translate(250px, 0) perspective(200px) rotateY(150deg) rotateX(50deg);
+            ;
+        }
+        60% {
+            transform: translate(250px, 0) perspective(200px) rotateY(180deg) rotateX(50deg);
+            ;
+        }
+        70% {
+            transform: translate(100px, 0) perspective(200px) rotateY(190deg) rotateX(50deg);
+            ;
+        }
+        80% {
+            transform: translate(100px, 0) perspective(200px) rotateY(150deg) rotateX(30deg);
+        }
+        90% {
+            transform: translate(100px, 0) perspective(200px) rotateY(150deg) rotateX(30deg);
+        }
+        100% {
+            background-color: darkgreen;
+            transform: translate(0, 0);
+        }
+        */
+    }

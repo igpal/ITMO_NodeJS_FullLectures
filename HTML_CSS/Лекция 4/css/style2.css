@@ -1,0 +1,50 @@
+@import url(./grid.css);
+body {
+    margin: 0;
+}
+
+main div {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slaider {
+    padding: 0;
+    margin: 0 0 30px;
+    list-style-type: none;
+}
+
+.slaider>li {
+    display: none;
+}
+
+.slaider>li.active {
+    display: block;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
+
+.margin-rigth {
+    margin-left: 10px;
+}
+
+.card {
+    margin: 5px;
+    width: calc(100%- 10px);
+    height: calc(25vw- 10px);
+    background-color: rgba(200, 200, 10, 0.58);
+}

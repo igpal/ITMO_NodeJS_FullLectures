@@ -1,0 +1,146 @@
+@import url("./grid.css");
+body {
+    margin: 0;
+}
+
+main div {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.slider {
+    padding: 0;
+    margin: 0 0 30px;
+    list-style-type: none;
+}
+
+.slider>li {
+    display: none;
+}
+
+.slider>li.active {
+    display: block;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+.margin-left {
+    margin-left: 10%;
+}
+
+.margin-rigth {
+    margin-right: 10px;
+}
+
+.card {
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: calc(25vw - 10px);
+    background-color: rgba(200, 200, 10, 0.58);
+    /* по умолчанию*/
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+    word-break: normal;
+    word-break: break-all;
+}
+
+.container {
+    box-shadow: 0 0 5px;
+}
+
+.font {
+    font-size: 16px;
+}
+
+li.hover:hover {
+    /* font-size: 20px;*/
+    /* 1 em = 16px em- относительно родительского контекста*/
+    font-size: 2em;
+    /*2.5 em*/
+    font-size: 250%;
+}
+
+.height {
+    line-height: 1.5;
+    height: calc(32px + 3 * 1em * 1.5 + 2.5em * 1.5);
+}
+
+img {
+    max-width: 100%;
+}
+
+.slider img {
+    width: 1920px;
+    max-width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+
+/*li {
+    margin: 1em;
+}*/
+
+
+/* МЕДИА-ЗАПРОРСЫ
+@media условие {
+    селектор {
+        свойство: значение;
+    }
+}
+
+Условие:
+    * Типы носителей (all,screen,print)
+    * Логические операторы (and,not,only)
+    * Медиа-функции (max-width,max-height, orientation)
+
+
+*/
+
+@media screen and (max-width:480px) {
+    .slider {
+        display: none;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+    .flex-xs-colum {
+        flex-direction: column;
+    }
+    .height {
+        line-height: 1.5;
+        height: calc(32px + 3 * 1em * 1.5 + 2.5em * 1.5);
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:960px) {
+    .col-lg-4 {
+        width: 33.3%;
+    }
+    .cards>div:last-child {
+        display: none;
+    }
+}

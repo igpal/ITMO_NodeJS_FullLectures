@@ -1,0 +1,124 @@
+@import url("style2.css");
+h3 {
+    color: blueviolet;
+}
+
+
+/*
+
+sdsdfsdf
+sdfdsfdsf
+
+*/
+
+
+/*  Селектор класса */
+
+.center_text {
+    text-align: center;
+}
+
+
+/*  Селектор идентификатора */
+
+#container {
+    height: 100px;
+    width: 100px;
+    background: yellow;
+}
+
+
+/* Дочерний Селектор 
+Родитель > Наследник {
+    color: red;
+}
+*/
+
+p>em {
+    font-size: 60pt;
+}
+
+
+/*  Селектор потомка 
+родитель потомок {
+    ...
+}*/
+
+div em {
+    color: sienna;
+}
+
+p .red a {
+    text-decoration: none;
+}
+
+p .red>a {
+    text-decoration: line-through;
+}
+
+h1,
+h2,
+h3 {
+    background-color: grey;
+}
+
+nav li {
+    list-style-type: none;
+    font-family: Verdana;
+}
+
+
+/* Соседский Селектор */
+
+b+i {
+    color: red;
+}
+
+
+/* Родственный Селектор */
+
+h1~p {
+    color: red;
+}
+
+
+/* Универсальный Селектор */
+
+* {
+    color: salmon;
+}
+
+
+/* Селектор  Атрибутов*/
+
+[id] {
+    background-color: orange;
+}
+
+[id="test"] {
+    background-color: greenyellow;
+}
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+/* 0001 = 1*/
+
+p {
+    background-color: green;
+}
+
+
+/* 0100 = 100*/
+
+#elem {
+    background-color: yellow;
+}
+
+
+/* 0010 = 10*/
+
+.elem-class {
+    background-color: blue;
+}

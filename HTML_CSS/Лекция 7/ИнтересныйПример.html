@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        header {
+            height: 60px;
+        }
+        
+        .scroll-container {
+            height: calc(100vh - 60px);
+            overflow: auto;
+            scroll-snap-type: y mandatory;
+            font-size: 60px;
+        }
+        
+        .scroll-area {
+            height: calc(100vh - 60px);
+            scroll-snap-align: start;
+        }
+        
+        .bg-green {
+            background-color: green;
+        }
+        
+        .bg-orange {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Menu</header>
+    <div class="scroll-container">
+        <div class="scroll-area bg-green">1</div>
+        <div class="scroll-area bg-orange">2</div>
+        <div class="scroll-area bg-green">3</div>
+        <div class="scroll-area bg-orange">4</div>
+        <div class="scroll-area bg-green">5</div>
+    </div>
+</body>
+
+</html>
