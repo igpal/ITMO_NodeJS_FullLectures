@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>    
+    <script>
+        customElements.define('user-card', class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({mode: 'open'});
+                this.shadowRoot.innerHTML = `
+                    <div>Имя:
+                        <slot name="username">Аноним</slot>
+                    </div>
+                    <div>Дата рождения:
+                        <slot name="birthday"></slot>
+                    </div>
+                    <div>Остальное:
+                        <slot></slot>
+                    </div>
+                `;
+            }
+        });
+    </script>
+
+    <user-card>
+      <span>Иван Иванов</span>
+      <span slot="birthday">01.01.2001</span>
+    </user-card>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>    
+    <script>
+        class Сounter extends HTMLButtonElement {
+            constructor() {
+                super();
+                this.onclick = (e)=>{
+                    this.count++;
+                    this.render();
+                }
+            }
+            
+            count = 0;
+            
+            render(){
+                this.innerHTML = this.count;
+            }
+            
+            connectedCallback() {
+                this.render()
+            }
+            
+            static get observedAttributes() {
+                return ['start'];
+            }
+            
+            attributeChangedCallback(name, oldValue, newValue) { // (4)
+                if(name === 'start'){
+                    this.count = parseInt(newValue);
+                }
+                this.render();
+            }
+            
+        }
+        
+		customElements.define("my-counter", Сounter, {extends: 'button'});
+    </script>
+    <button is="my-counter" start="5"></button>
+</body>
+</html>

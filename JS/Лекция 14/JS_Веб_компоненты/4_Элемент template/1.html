@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>    
+    <template id="tmpl">
+        <script>
+            alert("Привет");
+        </script>
+        <div class="message">Привет, Мир!</div>
+    </template>
+    <script>
+        let elem = document.createElement('div');
+        elem.append(tmpl.content.cloneNode(true));
+        //elem.append(document.importNode(tmpl.content, true));
+
+        document.body.append(elem);
+    </script>
+</body>
+</html>

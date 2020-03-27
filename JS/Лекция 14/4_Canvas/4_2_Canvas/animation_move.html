@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<canvas id='canvas' width='500' height='300' style='border: 1px solid'></canvas>
+	
+	<script>
+
+		var context = document.getElementById('canvas').getContext('2d');
+		var width = 100, height = 100;
+
+
+		var cop = loadImage('hero_spritesheet_move.png', 75, 84, 6);
+
+		setInterval(function() {
+			drawImage(cop, 0, 0);
+		}, 150)
+
+
+		function drawImage(img, x, y) {
+
+			if (img.num >= img.count) img.num = 1;
+				else img.num+=1;
+			context.clearRect(0, 0, 500, 300);
+			context.drawImage(img.dom, img.width*(img.num-1), 0, img.width, img.height, 0, 0, 75, 84);
+		}
+
+		function loadImage(path, width, height, count) {
+			var image = document.createElement('img');
+
+			var result = {
+				dom : image,
+				width : width,
+				height : height,
+				count : count,
+				loaded : false,
+				num : 1
+			};
+
+			image.onload = function() {
+				result.loaded = true;
+			};
+
+			image.src = path;
+			document.body.appendChild(image);
+			return result;
+		}
+
+	</script>
+
+</body>
+</html>

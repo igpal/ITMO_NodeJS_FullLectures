@@ -1,0 +1,25 @@
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		//Пример создания объекта
+		let storage = {
+			store:[],
+			set: function(key, value) {
+				this.store[key] = value;
+			},
+			get: function(key){
+				if(!key) return;
+				return this.store[key];
+			}
+		
+		}
+		
+		storage.set("Приветствие", "Привет мир");
+		alert(storage.get("Приветствие"));
+	</script>
+</body>
+<footer></footer>
+</html>

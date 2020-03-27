@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Заголовок страницы</title>
+</head>
+
+<body>
+    <h1>Название статьи</h1>
+    <div>
+        <h2>Раздел статьи</h2>
+        <p>Содержимое статьи</p>
+    </div>
+    <script src="d3.js"></script>
+    <script src="domtree.js"></script>
+    <script src="createDescriptionObj.js"></script>
+    <div class="domtree"></div>
+    <script>
+        var result = createDescriptionObj(document);
+
+        drawHtmlTree(result, 'div.domtree', 1000, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.game_field {
+    border: 1px solid black;
+}
+
+.game_field td {
+    border: 1px solid black;
+    width: 80px;
+    height: 35px;
+}
+
+.game_field td:hover {
+    /*background: #fc0; /* Цвет фона */
+    box-shadow: 1px 0 1px rgba(5, 5, 5, 5.5);
+    /* Параметры тени */
+}
+
+.class1 {
+    background: green;
+    background-color: green;
+}
+
+.class2 {
+    background: red;
+}
+
+.class3 {
+    background: LightPink;
+}
+
+.class4 {
+    background: BlueViolet;
+}
+
+.class_yeloow_shadow {
+    box-shadow: 0 0 5px 2px yellow;
+}

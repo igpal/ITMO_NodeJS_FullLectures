@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Пример всплытия событий -->
+    <style>
+        body * {
+            margin: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form onclick="alert('Событие сработало на элемента form')" style="background-color: green;">FORM
+        <div onclick="alert('Событие сработало на элемента div')" style="background-color: blue;">DIV
+            <p onclick="alert('Событие сработало на элемента p')" style="background-color: red;">P</p>
+        </div>
+    </form>
+    <script>
+        var p = document.getElementsByTagName("p")[0];
+        var div = document.getElementsByTagName("div")[0];
+        var form = document.getElementsByTagName("form")[0];
+
+        p.onclick = function() {
+            alert("Ещё одна обработка");
+        }
+
+        p.addEventListener("click", function(e) {
+            alert("Ещё одна обработка2 p");
+        }, true);
+        div.addEventListener("click", function(e) {
+            alert("Ещё одна обработка2 div");
+            e.stopPropagation(); // остановка дальнейших события
+        }, true);
+        form.addEventListener("click", function(e) {
+            console.log(e.target);
+            console.log(this);
+            console.log(e);
+            alert("Ещё одна обработка2 form");
+        }, true);
+
+        function canselContextMenu(e) {
+            e.preventDefault();
+        }
+        form.addEventListener("contextmenu", canselContextMenu, true);
+        form.removeEventListener("contextmenu", canselContextMenu, true);
+    </script>
+</body>
+
+</html>

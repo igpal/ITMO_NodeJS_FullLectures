@@ -1,0 +1,34 @@
+#present_container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#present_container p {
+    background: red;
+    display: inline-block;
+    margin: 10px;
+    padding: 30px 5px;
+    text-align: center;
+    width: 200px;
+    color: white;
+}
+
+#present_container .present {
+    background: yellow;
+    color: #333;
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+}
+
+td {
+    width: 60px;
+    height: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+}
