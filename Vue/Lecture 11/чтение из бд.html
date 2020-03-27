@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let name = "db_1";
+        let version = 1;
+
+        let openRequest = indexedDB.open(name, version);
+
+        openRequest.onupgradeneeded = function(e) {
+            let db = openRequest.result;
+
+            switch (e.oldVersion) {
+                case 0:
+                    //Нету бд
+                    console.log("Создадим базу версия 1");
+                    db.createObjectStore("todos", {
+                        keyPath: 'key'
+                    });
+                    break;
+                case 1:
+                    //на клиенте версия 1
+                    console.log("Обновим базу до версии 2");
+            }
+        };
+
+        openRequest.onerror = function() {
+            console.error("Error", openRequest.error);
+        };
+
+
+        openRequest.onsuccess = function() {
+            let db = openRequest.result;
+            let transaction = db.transaction("todos", "readonly");
+
+            let todos = transaction.objectStore("todos");
+
+            let request = todos.getAll();
+
+            request.onsuccess = function() {
+                console.log("Сохранили todo", request.result);
+            }
+
+            request.onerror = function() {
+                console.log("Не получилось");
+            }
+
+            /*console.log("База готова к работе");
+            let db = openRequest.result;
+            let transaction = db.transaction("todos", "readwrite");
+            
+            let todos = transaction.objectStore("todos");
+            let todo = {
+                key: 1,
+                task:"Task1",
+                created: new Date
+            };
+            
+            let request = todos.add(todo);
+            
+            request.onsuccess = function(){
+                console.log("Сохранили todo");
+            }
+            
+            request.onerror = function(){
+                console.log("Не получилось");
+            }
+            
+            transaction.oncomplete = function(){
+            
+            }*/
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <userlist :users="users">
+            <template v-slot:default="test">
+                <li>{{test.str_name}}-{{test.age}}</li>
+            </template>
+        </userlist>
+    </div>
+    <script>
+        Vue.component('userlist', {
+            props: ['users'],
+            template: `<ul>
+                <slot v-for="user in users" :str_name="user" age="25"></slot>
+            </ul>`
+        });
+
+
+        let app = new Vue({
+            el: "#app",
+            data: {
+                users: ['Sasha', 'Petr', 'Ivan']
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IndexDB</title>
+</head>
+<body>
+<input id="input_file" type="file">
+<button id="add_image">Сохранить</button>
+<div id="gallery">
+
+</div>
+<script>
+    let name = "list_image_bd"; //имя БД
+    let version = 1; //Версия БД
+	let openRequest = indexedDB.open(name, version);
+    //indexedDB.deleteDatabase('list_image_bd');
+    openRequest.onupgradeneeded = function(event) {
+        let db = openRequest.result;
+        switch(event.oldVersion) {
+            case 0:
+                console.log("Базы данных не существует");
+                let list_image = db.createObjectStore('list_image', {keyPath: 'id', autoIncrement:true});                
+        }
+    };
+
+    openRequest.onerror = function() {
+      console.error("Error", openRequest.error);
+    };
+
+    openRequest.onsuccess = function() {
+        let db = openRequest.result;
+        
+        //Читаем из базы
+        //Создаем транзацию
+        let transaction = db.transaction("list_image", "readwrite");
+        //Получаем объект хранилище
+        let list_image = transaction.objectStore("list_image");
+        //Формируем запрос на поиск
+        let request = list_image.getAll();
+        
+        request.onsuccess = function() {
+            console.log("Считаны картинки из хранилища", request.result);
+            let gallery = document.getElementById("gallery");
+            for(let i = 0; i < request.result.length; i++) {
+                let img = document.createElement('img');
+                img.src = request.result[i].url;
+                gallery.append(img);
+            }
+        };
+
+        request.onerror = function() {
+          console.log("Ошибка", request.error);
+        }; 
+        
+        let add_image = document.getElementById("add_image");
+        add_image.onclick = function(){
+            //Получаем файл
+            let input_file = document.getElementById("input_file");
+            let file = input_file.files[0];
+            if(file){
+                //Читаем файл
+                let reader = new FileReader();
+                reader.readAsDataURL(file); // конвертирует Blob в base64 и вызывает onload
+
+                reader.onload = function() {                    
+                    //создать транзакцию и указать все хранилища, к которым необходим доступ,
+                    let transaction = db.transaction("list_image", "readwrite");
+                    // получить хранилище объектов для работы с ним
+                    let list_image = transaction.objectStore("list_image");
+                    let saveObj = {
+                        url: reader.result
+                    }; // url с данными
+                    let request = list_image.add(saveObj);
+
+                    request.onsuccess = function() {
+                        console.log("Картинка добавлена в хранилище", request.result);
+                        let gallery = document.getElementById("gallery");
+                        let img = document.createElement('img');
+                        img.src = saveObj.url;
+                        gallery.append(img);
+                    };
+
+                    request.onerror = function() {
+                        console.log("Ошибка", request.error);
+                    };
+                    
+                };
+            }       
+        };        
+    };
+    
+    openRequest.onblocked = function() {
+      // есть другое соединение к той же базе
+      // и оно не было закрыто после срабатывания на нём db.onversionchange
+      alert("Пожалуйста, перезагрузите другие вкладки работающие с нашим сайтом.");
+    };
+</script>
+</body>
+</html>

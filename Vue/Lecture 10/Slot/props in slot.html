@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <ads username="Sasha" userage="23">
+            <template v-slot:footer>
+                <p>Что-то</p>
+            </template>
+            <template v-slot:header>
+                <p>Что-то</p>
+            </template>
+            <template #default="obj">
+                <p>{{obj.username}}</p>
+                <p>{{obj.userage}}</p>
+            </template>
+        </ads>
+    </div>
+    <script>
+        Vue.component('ads', {
+            props: ['username', 'userage'],
+            template: `<div>
+                <slot name="header"></slot>
+                <h3>Объявление</h3>
+                <slot 
+                    :username="username"
+                    :userage="userage"
+                ></slot>
+                <slot name="footer"></slot>                
+            </div>`
+        });
+
+
+        let app = new Vue({
+            el: "#app"
+        });
+    </script>
+</body>
+
+</html>
